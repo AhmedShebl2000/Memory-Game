@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Memory Game</title>
+    <link rel="stylesheet" href="Task5.css" />
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.0/dist/confetti.browser.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="game-title">Memory Game</h1>
+      <div class="score-container">
+        <div class="score">Matches: <span id="score">0</span>/6</div>
+      </div>
+
+      <!-- Game Board -->
+      <div class="game-board">
+        <div class="row">
+          <img
+            id="1"
+            src="/memoryGame/Moon.gif"
+            onclick="handleClick(this)"
+            alt="card"
+          />
+          <img
+            id="2"
+            src="/memoryGame/Moon.gif"
+            onclick="handleClick(this)"
+            alt="card"
+          />
+          <img
+            id="3"
+            src="/memoryGame/Moon.gif"
+            onclick="handleClick(this)"
+            alt="card"
+          />
+        </div>
+
+        <div class="row">
+          <img
+            id="4"
+            src="/memoryGame/Moon.gif"
+            onclick="handleClick(this)"
+            alt="card"
+          />
+          <img
+            id="5"
+            src="/memoryGame/Moon.gif"
+            onclick="handleClick(this)"
+            alt="card"
+          />
+          <img
+            id="6"
+            src="/memoryGame/Moon.gif"
+            onclick="handleClick(this)"
+            alt="card"
+          />
+        </div>
+
+        <div class="row">
+          <img
+            id="7"
+            src="/memoryGame/Moon.gif"
+            onclick="handleClick(this)"
+            alt="card"
+          />
+          <img
+            id="8"
+            src="/memoryGame/Moon.gif"
+            onclick="handleClick(this)"
+            alt="card"
+          />
+          <img
+            id="9"
+            src="/memoryGame/Moon.gif"
+            onclick="handleClick(this)"
+            alt="card"
+          />
+        </div>
+
+        <div class="row">
+          <img
+            id="10"
+            src="/memoryGame/Moon.gif"
+            onclick="handleClick(this)"
+            alt="card"
+          />
+          <img
+            id="11"
+            src="/memoryGame/Moon.gif"
+            onclick="handleClick(this)"
+            alt="card"
+          />
+          <img
+            id="12"
+            src="/memoryGame/Moon.gif"
+            onclick="handleClick(this)"
+            alt="card"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- Congratulations screen -->
+    <div class="congrats">
+      <h1>Congratulations!</h1>
+      <p>You've matched all the cards!</p>
+      <button id="play-again">Play Again</button>
+    </div>
+
+    <script src="Task5.js"></script>
+  </body>
+</html>
